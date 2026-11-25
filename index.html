@@ -19,10 +19,9 @@
 
   <title>Quentin A. Grant | Cloud Engineer</title>
 
-  
- 
 
-<!-- Quentin A. Grant - Person Schema / JSON-LD -->
+  
+<!-- Quentin A. Grant + LeagueDom - Person and Organization Schema / JSON-LD -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -45,6 +44,9 @@
         "Personal Development Leadership"
       ],
       "url": "https://quentin-grant.github.io/portfolio/",
+      "affiliation": {
+        "@id": "https://leaguedom.com/#organization"
+      },
       "sameAs": [
         "https://github.com/quentin-grant",
         "https://www.linkedin.com/in/quentingrant/",
@@ -80,6 +82,15 @@
           "url": "https://www.amazon.com/dp/B09RQQ13LF"
         }
       ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://leaguedom.com/#organization",
+      "name": "LeagueDom",
+      "url": "https://leaguedom.com",
+      "founder": {
+        "@id": "https://quentin-grant.github.io/portfolio/#person"
+      }
     }
   ]
 }
